@@ -36,6 +36,22 @@ a {
     background-color: antiquewhite;
   }
 
+  .container input {
+    display: block;
+    padding: 0.2em;
+    margin-bottom: 0.5em;
+  }
+
+  .container select {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
+  .container textarea {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+
   footer {
     background-color: black;
     margin-left: 1em;
