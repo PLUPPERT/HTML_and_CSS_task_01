@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Examples</title>
+    <link href="style.css" rel="stylesheet" />
+
+  </head>
+
+  <body>
+    <header>
+      
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">News</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+      </nav>
+      
+    </header>
+
+    <div class="container">
+
+      <form>
+        <h3>Registration Form</h3>
+        <p>Please fill in this form to create an account</p>
+  
+        <label>First Name: *</label>
+        <input
+          type="text"
+          placeholder="Enter First Name"
+          id="fn"
+          name="firstName"
+          required
+        />
+  
+        <label>Last Name: *</label>
+        <input
+          type="text"
+          placeholder="Enter Last Name"
+          id="ln"
+          name="lastName"
+          required
+        />
+  
+        <label>Email: *</label>
+        <input
+          type="text"
+          placeholder="Enter a valid Email"
+          id="email"
+          name="email"
+          required
+        />
+  
+        <label>Course:</label>
+        <select id="course" name="course">
+          <option value="1">Java</option>
+          <option value="2">C#</option>
+          <option value="3">Python</option>
+        </select>
+  
+        <label>Description</label>
+        <textarea
+          id="desc"
+          name="desc"
+          placeholder="Tell us about your experiences..."
+        >
+        </textarea>
+  
+        <hr />
+  
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+  
+      <hr />
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th colspan="2">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Mehrdad</td>
+            <td>Javan</td>
+            <td><button type="submit">Delete</button></td>
+            <td><button type="submit">Edit</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Simon</td>
+            <td>Elbrink</td>
+            <td><button type="submit">Delete</button></td>
+            <td><button type="submit">Edit</button></td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+    <footer>
+      <h6>Copyright &copy; 2023 <span style="color: red;">Lexicon</span></h6>
+    </footer>
+  </body>
+</html>
