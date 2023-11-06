@@ -1,58 +1,153 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    margin-top: -1.2em;
-    background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  margin-top: -1.2em;
+  background-color: black;
+  color: rgb(243, 255, 238);
+}
+
+h3 {
+  font-family: "Roboto, Bold", sans-serif;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
 }
 
 nav {
-    width: 100%;
-    padding: 1em;
-    margin: 0 0 1.5em 0;
-    float: left;
-    border-bottom: 5px solid green;
-    background-color:black;
+  width: 100%;
+  padding: 1em;
+  margin: 0 0 1.5em 0;  
+  float: left;
+  border-bottom: 5px solid green;
+  background-color: black;
 }
 
 a {
-    color: white;
-    padding: 1em;
-    text-align: center;
-    font-size: 1.5em;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-decoration: none;
+}
 
-    text-decoration: none;
-  }
+a:hover {
+  background-color: rgba(240, 248, 255, 0.479);
+  color: black;
+}
 
-  a:hover {
-    background-color: rgb(240, 248, 255);
-    color: black;
+.container {
+  height:100vh;
+  padding-left: 10em;
+  padding-right: 60em;
+  padding-bottom: 1em;
+  background-color: rgb(32, 32, 31);
+}
 
-  }
+.container input {
+  display: block;
+  padding: 0.2em;
+  margin-bottom: 0.5em;
+  background-color: black;
+  color: rgb(75, 248, 40);
+  font-family: 'Courier, Bold';
+}
 
-  .container {
-    padding-left: 1em;
-    padding-bottom: 1em;
-    background-color: antiquewhite;
-  }
+.container select {
+  display: block;
+  margin-bottom: 0.5em;
+  background-color: black;
+  color: rgb(75, 248, 40);
+  font-family: 'Courier, Bold';
+}
 
-  .container input {
-    display: block;
-    padding: 0.2em;
-    margin-bottom: 0.5em;
-  }
+.container textarea {
+  display: block;
+  margin-bottom: 0.5em;
+  padding-left: 6px;
+  min-width: 162px;
+  max-width: 390px;
+  min-height: 60px;
+  background-color: black;
+  color: rgb(75, 248, 40);
+  font-family: 'Courier, Bold';
+}
 
-  .container select {
-    display: block;
-    margin-bottom: 0.5em;
-  }
+.register-btn {  
+  background: darkgreen;
+  color: white;
+  border-color: white;
+  border-width: 0.1em;
+  border-radius: 5px;
+  font-size: medium;
+  font-weight: bold;
+}
 
-  .container textarea {
-    display: block;
-    margin-bottom: 0.5em;
-  }
+.register-btn::before {
+  content: "Register";
+}
 
-  footer {
-    background-color: black;
-    margin-left: 1em;
-  }
+.register-btn::after {
+  display: none;
+}
+
+.register-btn:hover {
+  background-size: 100%;
+  background: rgb(248, 235, 56);
+  color: rgb(65, 65, 38);
+}
+
+.register-btn:hover::before {
+  content: "What are you doing?";
+}
+
+.register-btn:hover::after {
+  display: none;
+}
+
+.register-btn:active {
+  background-size: 100%;
+  background: coral;
+  color: white;
+}
+
+.register-btn:active::before {
+  content: "Let go of me!!!";  
+}
+
+table {
+  width: 100%;
+  padding: 0 0 2em 0;
+  margin: 0 0 1.5em 0;  
+  float: left;
+  text-align: left;
+}
+
+#action-label {
+  text-align: center;
+}
+
+#thead-line {
+  border-bottom: 1px solid white;
+  margin-top: -5px;
+  border-style: dashed;
+}
+
+#delete-btn {
+  background-color: darkred;
+  color: white;
+  font-weight: bold;
+}
+
+#edit-btn {
+  margin-left: -34px;
+  background-color: coral;
+  color: white;
+  font-weight: bold;
+}
+
+footer {
+  background-color: black;
+  margin-left: 1em;
+}
