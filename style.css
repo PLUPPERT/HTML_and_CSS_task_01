@@ -1,33 +1,48 @@
 body {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+  min-width: fit-content;
+  height: 100vh;
+  min-height: 600px;
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  margin-top: -1.2em;
+  margin: auto;
   background-color: black;
   color: rgb(243, 255, 238);
+  border: 3px solid white;
 }
 
 h3 {
   font-family: "Roboto, Bold", sans-serif;
+  text-align: center;
 }
 
 label {
   font-family: "Roboto", sans-serif;
+  padding-left: 0.3em;
 }
 
 nav {
-  width: 100%;
-  padding: 1em;
-  margin: 0 0 1.5em 0;  
-  float: left;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 60vh;
+  min-width: 280px;
   border-bottom: 5px solid green;
   background-color: black;
 }
 
 a {
+  display: flex;
+  flex-shrink: 1;
   color: white;
-  padding: 1em;
+  padding: 0.5em;
   text-align: center;
-  font-size: 1.5em;
+  font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
 }
@@ -38,20 +53,27 @@ a:hover {
 }
 
 .container {
-  height:100vh;
-  padding-left: 10em;
-  padding-right: 60em;
-  padding-bottom: 1em;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  width: 60vh;
+  min-width: 280px;
+  min-height: 550px;
   background-color: rgb(32, 32, 31);
 }
 
 .container input {
-  display: block;
+  display: flex;
+  flex-shrink: 1;
+  min-width: 260px;
+  width: 55vh;
   padding: 0.2em;
+  margin-left: 0.3em;
   margin-bottom: 0.5em;
   background-color: black;
   color: rgb(75, 248, 40);
-  font-family: 'Courier, Bold';
+  font-family: "Courier, Bold";
 }
 
 .container select {
@@ -59,22 +81,25 @@ a:hover {
   margin-bottom: 0.5em;
   background-color: black;
   color: rgb(75, 248, 40);
-  font-family: 'Courier, Bold';
+  font-family: "Courier, Bold";
+  margin-left: 0.3em;
 }
 
 .container textarea {
   display: block;
   margin-bottom: 0.5em;
   padding-left: 6px;
-  min-width: 162px;
-  max-width: 390px;
+  margin-left: 0.3em;
+  width: 55vh;
+  min-width: 260px;
   min-height: 60px;
   background-color: black;
   color: rgb(75, 248, 40);
-  font-family: 'Courier, Bold';
+  font-family: "Courier, Bold";
 }
 
-.register-btn {  
+.register-btn {
+  display: flex;
   background: darkgreen;
   color: white;
   border-color: white;
@@ -82,6 +107,8 @@ a:hover {
   border-radius: 5px;
   font-size: medium;
   font-weight: bold;
+  margin: 0 auto;
+ align-items: center;
 }
 
 .register-btn::before {
@@ -113,19 +140,32 @@ a:hover {
 }
 
 .register-btn:active::before {
-  content: "Let go of me!!!";  
+  content: "Let go of me!!!";
 }
 
 table {
-  width: 100%;
-  max-width: 390px;
-  padding: 0 0 2em 0;
-  margin: 0 0 1.5em 0;  
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  width: 100vh;
+
   float: left;
   text-align: left;
 }
 
+.table-titles {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+
 #thead-line {
+  display: flex;
+  flex-grow: 1;
+  width: 55vh;
   border-bottom: 1px solid white;
   margin-top: -5px;
   border-style: dashed;
@@ -136,9 +176,9 @@ table {
 }
 
 .btn-cell {
-  display:flex;
-  align-items:center;
-  justify-content:center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #delete-btn {
@@ -148,14 +188,15 @@ table {
 }
 
 #edit-btn {
-  /* margin-left: -34px; */
-  
   background-color: coral;
   color: white;
   font-weight: bold;
 }
 
 footer {
+  display: flex;
+  justify-content: center;
   background-color: black;
-  margin-left: 1em;
+  position:sticky;
+  width: 100%;
 }

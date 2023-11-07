@@ -24,7 +24,7 @@
 
       <form>
         <h3>Registration Form</h3>
-        <p>Please fill in this form to create an account</p>
+        <p style="padding-left: 0.3em;">Please fill in this form to create an account</p>
   
         <label>First Name: *</label>
         <input
@@ -35,7 +35,7 @@
           required
         />
   
-        <label>Last Name: *</label>
+        <label id="l-name">Last Name: *</label>
         <input
           type="text"
           placeholder="Enter Last Name"
@@ -44,7 +44,7 @@
           required
         />
   
-        <label>Email: *</label>
+        <label id="email">Email: *</label>
         <input
           type="text"
           placeholder="Enter a valid Email"
@@ -53,7 +53,7 @@
           required
         />
   
-        <label>Course:</label>
+        <label id="course">Course:</label>
         <select id="course" name="course">
           <option value="1">Java</option>
           <option value="2">C#</option>
@@ -70,10 +70,10 @@
         <button type="submit" class="register-btn"></button>
       </form>
   
-      <hr style="max-width: 390px; margin-left:0" />
+      <hr style="width: 37.5vh;" />
       <table>
         <thead>
-          <tr>
+          <tr class="table-titles">
             <th>Id</th>
             <th>First Name</th>
             <th>Last Name</th>
@@ -87,7 +87,7 @@
         </thead>
         <tbody>
           <tr>
-            <td>1</td>
+            <td>1.</td>
             <td>Mehrdad</td>
             <td>Javan</td>
             <td class="btn-cell" colspan="2">
@@ -96,7 +96,7 @@
             </td>
           </tr>
           <tr>
-            <td>2</td>
+            <td>2.</td>
             <td>Simon</td>
             <td>Elbrink</td>
             <td class="btn-cell" colspan="2">
