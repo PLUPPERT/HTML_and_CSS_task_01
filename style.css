@@ -1,48 +1,30 @@
 body {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  width: 100vh;
-  min-width: fit-content;
-  height: 100vh;
-  min-height: 600px;
+  display: grid;
+  grid-template-areas:
+    "myHeader"
+    "myContainer"
+    "myFooter"
+  ;
   font-family: Arial, Helvetica, sans-serif;
-  margin: auto;
   background-color: black;
-  color: rgb(243, 255, 238);
-  border: 3px solid white;
 }
-
-h3 {
-  font-family: "Roboto, Bold", sans-serif;
-  text-align: center;
-}
-
-label {
-  font-family: "Roboto", sans-serif;
-  padding-left: 0.3em;
+header {
+  grid-area: myHeader;
 }
 
 nav {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  justify-content: center;
-  gap: 0.5rem;
-  width: 60vh;
-  min-width: 280px;
-  border-bottom: 5px solid green;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  line-height: 2em;
+  border-bottom: 2px solid green;
   background-color: black;
 }
 
 a {
   display: flex;
-  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
   color: white;
-  padding: 0.5em;
-  text-align: center;
-  font-size: medium;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-decoration: none;
 }
@@ -53,53 +35,37 @@ a:hover {
 }
 
 .container {
-  display: inline-block;
-  flex-direction: column;
-  align-items: center;
-  flex-grow: 1;
-  width: 60vh;
-  min-width: 280px;
-  min-height: 550px;
+  grid-area: myContainer;
   background-color: rgb(32, 32, 31);
 }
 
+h3 {
+  font-family: "Roboto, Bold", sans-serif;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+}
+
 .container input {
-  display: flex;
-  flex-shrink: 1;
-  min-width: 260px;
-  width: 55vh;
-  padding: 0.2em;
-  margin-left: 0.3em;
-  margin-bottom: 0.5em;
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
 }
 
 .container select {
-  display: block;
-  margin-bottom: 0.5em;
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
-  margin-left: 0.3em;
 }
 
 .container textarea {
-  display: block;
-  margin-bottom: 0.5em;
-  padding-left: 6px;
-  margin-left: 0.3em;
-  width: 55vh;
-  min-width: 260px;
-  min-height: 60px;
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
 }
 
 .register-btn {
-  display: flex;
   background: darkgreen;
   color: white;
   border-color: white;
@@ -108,7 +74,6 @@ a:hover {
   font-size: medium;
   font-weight: bold;
   margin: 0 auto;
- align-items: center;
 }
 
 .register-btn::before {
@@ -144,28 +109,14 @@ a:hover {
 }
 
 table {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  align-items: center;
-  width: 100vh;
-
-  float: left;
-  text-align: left;
+  background-color: rgba(165, 42, 42, 0.562) ;
 }
 
 .table-titles {
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
+  color: blueviolet;
 }
 
 #thead-line {
-  display: flex;
-  flex-grow: 1;
-  width: 55vh;
   border-bottom: 1px solid white;
   margin-top: -5px;
   border-style: dashed;
@@ -176,9 +127,7 @@ table {
 }
 
 .btn-cell {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: pink;
 }
 
 #delete-btn {
@@ -194,9 +143,5 @@ table {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  background-color: black;
-  position:sticky;
-  width: 100%;
+  grid-area: myFooter;
 }
