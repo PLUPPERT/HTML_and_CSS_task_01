@@ -5,8 +5,10 @@ body {
     "myContainer"
     "myFooter"
   ;
+  justify-content: center;
   font-family: Arial, Helvetica, sans-serif;
   background-color: black;
+  color: white;
 }
 header {
   grid-area: myHeader;
@@ -36,15 +38,74 @@ a:hover {
 
 .container {
   grid-area: myContainer;
+  display: grid;
+  grid-template-areas: 
+    "myForm"
+    "myTable"
+  ;
+  width: 100vh;
+  min-width: 300px;
   background-color: rgb(32, 32, 31);
 }
 
+form {
+  grid-area: myForm;
+  display: grid;
+  grid-template-areas: 
+    "formHeader"
+    "formInstructions"
+    "fnLabel"
+    "fnInput"
+    "lnLabel"
+    "lnInput"
+    "emailLabel"
+    "email-Input"
+    "courseLabel"
+    "courseSelect"
+    "descLabel"
+    "descTextArea"
+    "regBtn"
+  ;
+}
+
 h3 {
+  grid-area: formHeader;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:x-large;
   font-family: "Roboto, Bold", sans-serif;
+}
+
+#instructions {
+  grid-area: formInstructions;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 label {
   font-family: "Roboto", sans-serif;
+}
+
+#fn-label {
+  grid-area: fnLabel;
+}
+
+#ln-label {
+  grid-area: lnLabel;
+}
+
+#email-label {
+  grid-area: emailLabel;
+}
+
+#course-label {
+  grid-area: courseLabel;
+}
+
+#desc-label {
+  grid-area: descLabel;
 }
 
 .container input {
@@ -53,10 +114,26 @@ label {
   font-family: "Courier, Bold";
 }
 
+#fn-input {
+  grid-area: fnInput;
+}
+
+#ln-input {
+  grid-area: lnInput;
+}
+
+#email-input {
+  grid-area: email-Input;
+}
+
 .container select {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
+}
+
+#course-select {
+  grid-area: courseSelect;
 }
 
 .container textarea {
@@ -65,7 +142,12 @@ label {
   font-family: "Courier, Bold";
 }
 
+#desc-text-area  {
+  grid-area: descTextArea;
+}
+
 .register-btn {
+  grid-area: regBtn;
   background: darkgreen;
   color: white;
   border-color: white;
@@ -109,6 +191,7 @@ label {
 }
 
 table {
+  grid-area: myTable;
   background-color: rgba(165, 42, 42, 0.562) ;
 }
 
@@ -144,4 +227,7 @@ table {
 
 footer {
   grid-area: myFooter;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

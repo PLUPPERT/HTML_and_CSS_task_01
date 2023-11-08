@@ -24,22 +24,23 @@
 
       <form>
         <h3>Registration Form</h3>
-        <p style="padding-left: 0.3em;">Please fill in this form to create an account</p>
-  
-        <label>First Name: *</label>
+        <div id="instructions">
+          <p>Please fill in this form to create an account</p>
+        </div>
+        <label id="fn-label">First Name: *</label>
         <input
           type="text"
           placeholder="Enter First Name"
-          id="fn"
+          id="fn-input"
           name="firstName"
           required
         />
   
-        <label id="last-name-label">Last Name: *</label>
+        <label id="ln-label">Last Name: *</label>
         <input
           type="text"
           placeholder="Enter Last Name"
-          id="ln"
+          id="ln-input"
           name="lastName"
           required
         />
@@ -48,29 +49,28 @@
         <input
           type="text"
           placeholder="Enter a valid Email"
-          id="email"
+          id="email-input"
           name="email"
           required
         />
   
         <label id="course-label">Course:</label>
-        <select id="course" name="course">
+        <select id="course-select" name="course">
           <option value="1">Java</option>
           <option value="2">C#</option>
           <option value="3">Python</option>
         </select>
   
-        <label>Description</label>
+        <label id="desc-label">Description</label>
         <textarea
-          id="desc"
+          id="desc-text-area"
           name="desc"
           placeholder="Tell us about your experiences..."
         ></textarea>
   
         <button type="submit" class="register-btn"></button>
       </form>
-  
-      <hr style="width: 37.5vh;" />
+
       <table>
         <thead>
           <tr class="table-titles">
