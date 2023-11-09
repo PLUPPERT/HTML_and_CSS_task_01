@@ -79,14 +79,12 @@ h3 {
 
 #instructions {
   grid-area: formInstructions;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 
 label {
   font-family: "Roboto", sans-serif;
-  padding-left: 1em;
+  text-align: center;
 }
 
 #fn-label {
@@ -116,6 +114,7 @@ label {
   margin-left: 1em;
   margin-right: 1em;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 #fn-input {
@@ -134,8 +133,6 @@ label {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
-  margin-left: 1em;
-  margin-right: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -147,9 +144,14 @@ label {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
-  margin-left: 1em;
-  margin-right: 1em;
+  border-radius: 5px;
+  margin-left: 2em;
+  margin-right: 2em;
   margin-bottom: 0.5em;
+  padding: 0.5em;
+  line-height: 1.5;
+  width: 94% !important;
+  max-height:320px;
 }
 
 #desc-text-area  {
@@ -161,11 +163,11 @@ label {
   background: darkgreen;
   color: white;
   border-color: white;
-  border-width: 0.1em;
+  border-width: 1px;
   border-radius: 5px;
   font-size: medium;
-  font-weight: bold;
-  margin: 0 auto;
+  margin-left: 1em;
+  margin-right: 1em;
   margin-bottom: 0.5em;
 }
 
@@ -241,4 +243,12 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.input, select, textarea, .register-btn {
+  width:96%;
+  max-width: 868px;
+  min-width: 30%;
+  text-align: center;
+  justify-self: center;
 }
