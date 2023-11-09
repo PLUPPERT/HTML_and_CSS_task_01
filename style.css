@@ -86,6 +86,7 @@ h3 {
 
 label {
   font-family: "Roboto", sans-serif;
+  padding-left: 1em;
 }
 
 #fn-label {
@@ -112,6 +113,9 @@ label {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
 }
 
 #fn-input {
@@ -130,6 +134,9 @@ label {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
 }
 
 #course-select {
@@ -140,6 +147,9 @@ label {
   background-color: black;
   color: rgb(75, 248, 40);
   font-family: "Courier, Bold";
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
 }
 
 #desc-text-area  {
@@ -156,6 +166,7 @@ label {
   font-size: medium;
   font-weight: bold;
   margin: 0 auto;
+  margin-bottom: 0.5em;
 }
 
 .register-btn::before {
